@@ -1,0 +1,279 @@
+* {
+  /* RESET */
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+
+  /* COLORS */
+  --color1: #191717;
+  --color2: #7D7C7C;
+  --color3: #CCC8AA;
+  --color4: #F5F5F5;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+/* -----HEADER----- */
+
+.header {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.8rem;
+}
+
+/* navbar */
+.nav__ul {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50rem;
+}
+
+.nav__li {
+  margin: 1rem;
+}
+
+.nav__a {
+  color: var(--color1);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* logo */
+.header__logo {
+  height: 100%;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+.logo__img {
+  width: 30rem;
+}
+
+/* icons */
+.icons__ul {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons__a {
+  margin: 2rem;
+  color: var(--color1);
+}
+
+/* -----MAIN----- */
+
+/* slogan */
+.main__slogan {
+  font-size: 3rem;
+  position: relative;
+  color: var(--color4);
+  height: 38.6rem;
+  background-color: #36b7c9;
+  /* ¿COMO DEFINIR LA ALTURA EN UNIDADES RELATIVAS USANDO POSITION RELATIVE? */
+}
+
+.slogan__h2 {
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  width: 100%;
+  font-weight: 500;
+}
+
+.slogan__img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* formas de trabajo */
+.main__formas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "titulo titulo"
+    "forma1 forma2";
+  gap: 4rem;
+  font-size: 1.6rem;
+  margin: 4rem;
+
+}
+
+.formas__h2 {
+  color: var(--color1);
+  grid-area: titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.online {
+  grid-area: forma1;
+}
+
+.diseñador {
+  grid-area: forma2;
+}
+
+.online,
+.diseñador {
+  background-color: var(--color4);
+  color: var(--color1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 25rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.online__a,
+.diseñador__a {
+  background-color: var(--color3);
+  color: var(--color1);
+  width: 20rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: .5rem;
+}
+
+/* categorías */
+.categorias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 4rem;
+}
+.categorias__encabezado {
+  font-size: 1.6rem;
+  margin: 0 4rem 4rem;
+}
+.categorias__bloques {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+.categorias__a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  color: var(--color1);
+}
+.categorias__p {
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
+  top: 10%;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.categorias__img {
+  width: 35rem;
+}
+
+/* colores */
+.main__colores {
+  font-size: 1.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem;
+}
+
+.colores__h2 {
+  margin-bottom: 4rem;
+}
+
+.colores__circulos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100rem;
+}
+
+.circulo1,
+.circulo2,
+.circulo3,
+.circulo4,
+.circulo5,
+.circulo6,
+.circulo7,
+.circulo8 {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.circulo1 {
+  background-color: #d1b795;
+}
+
+.circulo2 {
+  background-color: #98999b;
+}
+
+.circulo3 {
+  background-color: #0f1012;
+}
+
+.circulo4 {
+  background-color: #36b7c9;
+}
+
+.circulo5 {
+  background-color: #cbd969;
+}
+
+.circulo6 {
+  background-color: #ffe143;
+}
+
+.circulo7 {
+  background-color: #f0892a;
+}
+
+.circulo8 {
+  background-color: #e8608e;
+}
+
+/* referencias */
+
+
+/* -----FOOTER------ */
+
+.footer {
+  background-color: var(--color1);
+}
+
+.logof__img {
+  width: 30rem;
+}
+  
