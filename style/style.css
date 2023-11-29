@@ -95,8 +95,10 @@ html {
   top: 50%;
   left: 50%;
   margin: 0;
-  width: 100%;
   font-weight: 500;
+  background-color: rgb(25, 23, 23, 0.8);
+  padding: 1rem;
+  border-radius: 1.5rem;
 }
 
 .slogan__img {
@@ -334,8 +336,57 @@ html {
 
 .footer {
   background-color: var(--color1);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+  "logo rrss derechos"
+  "datos rrss derechos";
+  padding: 4rem;
+}
+
+/* logo */
+.footer__logof {
+  grid-area: logo;
+  text-align: center;
 }
 
 .logof__img {
   width: 30rem;
+}
+
+/* datos */
+.footer__datos {
+  grid-area: datos;
+  color: var(--color4);
+  font-size: 1.4rem;
+  padding: 2rem 0 0 0;
+}
+
+/* rrss */
+.footer__rrss {
+  grid-area: rrss;
+  font-size: 3rem;
+}
+
+.rrss__ul {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rrss__a {
+  color: var(--color4);
+}
+
+/* derechos */
+.footer__derechos {
+  grid-area: derechos;
+  color: var(--color4);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 1.4rem;
 }
