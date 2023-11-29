@@ -84,7 +84,7 @@ html {
   position: relative;
   color: var(--color4);
   height: 38.6rem;
-  background-color: #36b7c9;
+  background-color: var(--color4);
   /* ¿COMO DEFINIR LA ALTURA EN UNIDADES RELATIVAS USANDO POSITION RELATIVE? */
 }
 
