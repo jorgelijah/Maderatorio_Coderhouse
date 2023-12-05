@@ -122,7 +122,7 @@ html {
   gap: 4rem;
   font-size: 1.6rem;
   margin: 4rem;
-
+  justify-items: center;
 }
 
 .formas__h2 {
@@ -148,11 +148,11 @@ html {
   color: var(--color1);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
-  height: 25rem;
-  padding: 2rem;
+  height: 30rem;
+  padding: 5rem;
   border-radius: 1rem;
 }
 
@@ -233,7 +233,7 @@ html {
   width: 100rem;
   background-color: var(--color4);
   padding: 1rem;
-  border-radius: 4rem;
+  border-radius: 6rem;
 }
 
 .circulo1,
@@ -286,6 +286,7 @@ html {
   display: flex;
   flex-direction: column;
   margin: 0 4rem;
+  justify-items: center;
 }
 
 .referencia1,
@@ -307,6 +308,8 @@ html {
   align-items: end;
   justify-content: center;
   text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .referencia1__p,
@@ -317,6 +320,8 @@ html {
   align-items: start;
   justify-content: center;
   text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .referencia1__img,
@@ -349,9 +354,9 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
-  grid-template-areas: 
-  "logo rrss derechos"
-  "datos rrss derechos";
+  grid-template-areas:
+    "logo rrss derechos"
+    "datos rrss derechos";
   padding: 4rem;
 }
 
@@ -401,4 +406,49 @@ html {
   font-size: 1.4rem;
 }
 
+/* MEDIA QUARIES INDEX */
 
+@media (max-width: 1200px) {
+
+  /* slogan */
+  .main__slogan {
+    font-size: 2.5rem;
+    height: 30rem;
+  }
+
+  /* formas */
+  .online,
+  .diseñador {
+    max-width: 50rem;
+    font-size: 1.6rem;
+  }
+
+  /* categorias */
+  .categorias__img {
+    width: 30rem;
+  }
+
+  .categorias__bloques {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  /* circulos */
+  .colores__circulos {
+    width: 80rem;
+  }
+
+  .circulo1,
+  .circulo2,
+  .circulo3,
+  .circulo4,
+  .circulo5,
+  .circulo6,
+  .circulo7,
+  .circulo8 {
+    height: 7rem;
+    width: 7rem;
+  }
+
+}
