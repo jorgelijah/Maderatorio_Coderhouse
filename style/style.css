@@ -23,60 +23,36 @@ html {}
 
 /* -----HEADER----- */
 
-.header {
-  height: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  font-size: 18px;
-}
-
-/* navbar */
-.nav__ul {
-  height: 100%;
-  padding: 0;
+/* logo */
+.navbar-brand {
   margin: 0;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 500px;
+  padding: 0;
 }
 
-.nav__li {
-  margin: 10px;
+.navbar__logo {
+  width: 350px;
+  margin: 20px 120px 20px 20px;
 }
 
-.nav__a {
+.nav-link {
+  margin: 0 10px;
+  padding: 0;
   color: var(--color1);
   font-size: 18px;
   font-weight: 500;
-  text-decoration: none;
 }
 
-/* logo */
-.header__logo {
-  height: 100%;
-  margin: 0;
-  display: grid;
-  place-items: center;
+.nav-link:hover {
+  color: var(--color3);
 }
 
-.logo__img {
-  width: 300px;
+.btn {
+  background-color: var(--color1);
+  color: var(--color4);
 }
 
-/* icons */
-.icons__ul {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icons__a {
-  margin: 20px;
+.btn:hover {
+  background-color: var(--color3);
   color: var(--color1);
 }
 
@@ -155,7 +131,7 @@ html {}
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  height: 300px;
+  height: 350px;
   padding: 50px;
   border-radius: 10px;
 }
@@ -184,6 +160,11 @@ html {}
   font-weight: bold;
   border-radius: 5px;
   text-decoration: none;
+}
+
+.online__a:hover,
+.diseñador__a:hover {
+  color: var(--color2);
 }
 
 /* categorías */
@@ -237,9 +218,17 @@ html {}
   font-size: 18px;
 }
 
+.categorias__a:hover {
+  color: var(--color2);
+}
+
 .categorias__img {
   width: 350px;
   border-radius: 10px;
+}
+
+.categorias__img:hover {
+  color: var(--color2);
 }
 
 /* colores */
@@ -437,6 +426,10 @@ html {}
   padding: 0;
 }
 
+.rrss__a:hover {
+  color: var(--color3);
+}
+
 .rrss__a {
   color: var(--color4);
 }
@@ -455,6 +448,12 @@ html {}
 /* MEDIA QUARIES INDEX */
 
 @media (max-width: 1200px) {
+
+  /* logo */
+  .navbar__logo {
+    width: 300px;
+    margin: 20px 80px 20px 20px;
+  }
 
   /* slogan */
   .main__slogan {
@@ -500,9 +499,24 @@ html {}
 
 @media (max-width: 1024px) {
 
+  /* navbar */
+  .nav-link {
+    padding: 0 10px;
+  }
+
+  /* logo */
+  .navbar__logo {
+    width: 280px;
+    margin: 20px 60px 20px 20px;
+  }
+
   /* header */
   .nav__li {
     margin: 10px 0;
+  }
+
+  .slogan__h2 {
+    font-size: 30px;
   }
 
   /* formas */
@@ -525,5 +539,135 @@ html {}
       "datos derechos";
     padding: 30px;
   }
+}
 
+@media (max-width: 900px) {
+
+  /* categorias */
+  .categorias__img {
+    width: 280px;
+  }
+
+  .categorias__bloques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .online,
+  .diseñador {
+    max-width: 400px;
+    font-size: 14px;
+  }
+
+  /* circulos */
+  .colores__circulos {
+    width: 700px;
+  }
+
+  .circulo1,
+  .circulo2,
+  .circulo3,
+  .circulo4,
+  .circulo5,
+  .circulo6,
+  .circulo7,
+  .circulo8 {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__formas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .online,
+  .diseñador {
+    width: 400px;
+    height: 300px;
+    font-size: 14px;
+    padding: 35px;
+  }
+
+  /* circulos */
+  .colores__circulos {
+    width: 500px;
+  }
+
+  .circulo1,
+  .circulo2,
+  .circulo3,
+  .circulo4,
+  .circulo5,
+  .circulo6,
+  .circulo7,
+  .circulo8 {
+    height: 50px;
+    width: 50px;
+  }
+
+  .footer {
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .footer__datos {
+    margin: 20px 0;
+  }
+
+  .rrss__ul {
+    width: 250px;
+    justify-content: space-between;
+  }
+
+  .footer__derechos {
+    margin: 20px 0 0 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .categorias__bloques {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .colores__circulos {
+    width: 400px;
+  }
+
+  .circulo1,
+  .circulo2,
+  .circulo3,
+  .circulo4,
+  .circulo5,
+  .circulo6,
+  .circulo7,
+  .circulo8 {
+    height: 40px;
+    width: 40px;
+  }
+
+  .referencia1,
+  .referencia2,
+  .referencia3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .referencia2,
+  .referencia3 {
+    margin-top: 20px;
+  }
+
+  .referencia__img {
+    width: 300px;
+  }
 }
